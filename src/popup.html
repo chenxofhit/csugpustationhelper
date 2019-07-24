@@ -1,0 +1,66 @@
+<head>
+  <script type="text/javascript" src="jquery-1.9.0.min.js"></script>
+</head>
+<link rel="stylesheet" href="styles.css" />
+<div id="container">
+  <div class="form">
+    <form id="input">
+      <p>Sign in CSU GPU station:</p>
+      <input
+        type="text"
+        id="user_id"
+        name="user_id"
+        placeholder="username"
+        required="required"
+        autofocus
+      />
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="password"
+        required="required"
+      />
+      <input type="submit" id="signin" value="Sign in" class="button" />
+    </form>
+    <div id="detail">
+      <h2>Hey, Welcome Back</h2>
+
+      <br />
+      <br />
+
+      Public GPU Stations:
+      <br />
+      <a
+        href="http://station.csgrandeur.com/gpu/station/station?station_id=1&src=crx"
+        target="_blank"
+        >Titan_XP_1</a
+      >
+      <br />
+      <a
+        href="http://station.csgrandeur.com/gpu/station/station?station_id=2&src=crx"
+        target="_blank"
+        >Titan_XP_2</a
+      >
+
+      <br />
+      <br />Polling and Notification Switch:
+      <span class="ui-switch is-animated">
+        <input type="checkbox" class="ui-checkbox" id="cbxIsPoll" />
+        <span class="ui-button"></span>
+      </span>
+
+      <br />
+      <a href="http://github.com/chenxofhit/csugpustationhelper" target="_blank"
+        >Github</a
+      >
+
+      <br />
+
+      <br />
+      <input type="submit" id="signout" value="Sign out" class="button" />
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="popup.js"></script>
